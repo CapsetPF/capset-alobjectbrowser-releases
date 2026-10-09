@@ -4,6 +4,10 @@ Dépôt public des installeurs signés d'**AL Object Browser**, l'outil Capset p
 
 Le code source est dans le dépôt privé `CapsetPF/alobjectbrowser`. Ce dépôt ne contient que les binaires publiés et ce README : ni code, ni secret.
 
+## Manuel utilisateur
+
+Le manuel, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alobjectbrowser-releases](https://capsetpf.github.io/capset-alobjectbrowser-releases/) ([version Word](docs/manuel-almaze.docx)). Il est généré depuis `docs/manuel` du dépôt source.
+
 ## Installer
 
 Télécharger le dernier installeur depuis [Releases](https://github.com/CapsetPF/capset-alobjectbrowser-releases/releases/latest) :
