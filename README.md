@@ -1,6 +1,6 @@
 # capset-alobjectbrowser-releases
 
-Dépôt public des installeurs signés d'**AL Object Browser**, l'outil Capset pour parcourir et explorer le code AL de Microsoft Dynamics 365 Business Central (tables, pages, codeunits, extensions, utilisations, hiérarchie d'appels).
+Dépôt public des installeurs signés d'**ALmaze** (anciennement AL Object Browser), l'outil Capset pour parcourir et explorer le code AL de Microsoft Dynamics 365 Business Central (tables, pages, codeunits, extensions, utilisations, hiérarchie d'appels).
 
 Le code source est dans le dépôt privé `CapsetPF/alobjectbrowser`. Ce dépôt ne contient que les binaires publiés et ce README : ni code, ni secret.
 
@@ -10,12 +10,13 @@ Le manuel, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alo
 
 ## Installer
 
+Depuis la 1.0.0, l'application s'appelle **ALmaze**. Sur un poste où AL Object Browser est installé, la mise à jour (ou le setup d'ALmaze) désinstalle l'ancienne version ; les réglages, les corpus récents et la connexion GitHub sont conservés.
+
 Télécharger le dernier installeur depuis [Releases](https://github.com/CapsetPF/capset-alobjectbrowser-releases/releases/latest) :
 
 | Fichier | Usage |
 | --- | --- |
-| `AL.Object.Browser_<version>_x64-setup.exe` | **Recommandé.** Installation par utilisateur dans `%LOCALAPPDATA%\AL Object Browser`, sans droits administrateur. Silencieux : `setup.exe /S`. |
-| `AL.Object.Browser_<version>_x64_fr-FR.msi` | Déploiement centralisé. Silencieux : `msiexec /i "<fichier>.msi" /qn`. |
+| `ALmaze_<version>_x64-setup.exe` | **Recommandé.** Installation par utilisateur dans `%LOCALAPPDATA%\ALmaze`, sans droits administrateur. Silencieux : `setup.exe /S`. |
 
 Prérequis : Windows 10 ou 11 x64. Le runtime WebView2, déjà présent sur Windows 11 et sur les Windows 10 à jour, est téléchargé par l'installeur s'il manque.
 
@@ -44,7 +45,7 @@ Aucun binaire n'est déposé à la main. Les Releases sont créées par le workf
 1. La version est montée dans le dépôt source, puis un tag `v<version>` y est poussé.
 2. Le workflow vérifie que le tag concorde avec la version de l'application, puis construit les installeurs avec Tauri 2 (Rust + React), sur le runner Windows de Capset ou à défaut sur un runner `windows-latest` de GitHub.
 3. Il signe l'exécutable et les installeurs (Authenticode, horodatage DigiCert), signe les artefacts de mise à jour (minisign), puis crée ici la Release `v<version>` avec :
-   - le setup NSIS et le MSI ;
+   - le setup NSIS ;
    - leurs signatures `.sig` ;
    - `latest.json`, le manifeste lu par l'application pour se mettre à jour.
 4. Les notes de version reprennent les commits depuis la version précédente.
