@@ -6,9 +6,9 @@ Le code source est dans le dépôt privé `CapsetPF/alobjectbrowser`. Ce dépôt
 
 ## Manuel utilisateur
 
-Le manuel de la version 1.3.0, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alobjectbrowser-releases](https://capsetpf.github.io/capset-alobjectbrowser-releases/) ([version Word](docs/manuel-almaze.docx)). Il est généré depuis `docs/manuel` du dépôt source.
+Le manuel de la version 1.4.0, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alobjectbrowser-releases](https://capsetpf.github.io/capset-alobjectbrowser-releases/) ([version Word](docs/manuel-almaze.docx)). Il est généré depuis `docs/manuel` du dépôt source.
 
-La version 1.3 refond l'interface : en-tête d'objet compact avec une seule recherche de membres (Ctrl+F), en-tête et filtres communs aux panneaux du bas, dialogues homogènes, notifications empilées en bas à droite, diagrammes lisibles, thème Sombre et contrastes renforcés. Le détail est dans le chapitre « Nouveautés de la version 1.3 » du manuel.
+La version 1.4 aide le consultant à définir les cues d'un Role Center : un formulaire décrit chaque cue à développer en français (valeur, table, filtres, page, seuils), les cues existants du corpus sont proposés d'abord, et le ticket les spécifie dans une section « Cues à développer ». La Vue fonctionnelle montre aussi la structure des objets sans écran, les onglets et les FactBox. Le détail est dans le chapitre « Nouveautés de la version 1.4 » du manuel.
 
 ## Installer
 
