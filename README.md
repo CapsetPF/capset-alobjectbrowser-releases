@@ -6,7 +6,9 @@ Le code source est dans le dépôt privé `CapsetPF/alobjectbrowser`. Ce dépôt
 
 ## Manuel utilisateur
 
-Le manuel, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alobjectbrowser-releases](https://capsetpf.github.io/capset-alobjectbrowser-releases/) ([version Word](docs/manuel-almaze.docx)). Il est généré depuis `docs/manuel` du dépôt source.
+Le manuel de la version 1.3.0, avec captures d'écran, est en ligne : [capsetpf.github.io/capset-alobjectbrowser-releases](https://capsetpf.github.io/capset-alobjectbrowser-releases/) ([version Word](docs/manuel-almaze.docx)). Il est généré depuis `docs/manuel` du dépôt source.
+
+La version 1.3 refond l'interface : en-tête d'objet compact avec une seule recherche de membres (Ctrl+F), en-tête et filtres communs aux panneaux du bas, dialogues homogènes, notifications empilées en bas à droite, diagrammes lisibles, thème Sombre et contrastes renforcés. Le détail est dans le chapitre « Nouveautés de la version 1.3 » du manuel.
 
 ## Installer
 
@@ -34,7 +36,7 @@ Les installeurs sont signés par le certificat Capset (`CN=Capset, O=Capset, C=P
 
 ## Mise à jour automatique
 
-Une fois installée, l'application vérifie à chaque lancement s'il existe une version plus récente sur ce dépôt (`releases/latest/download/latest.json`). Si oui, un bandeau la propose avec ses notes de version : **Installer et redémarrer** télécharge l'installeur, l'installe et relance l'application, **Plus tard** la reproposera au prochain lancement. Sans réseau, l'application fonctionne normalement.
+Une fois installée, l'application vérifie à chaque lancement s'il existe une version plus récente sur ce dépôt (`releases/latest/download/latest.json`). Si oui, une notification en bas à droite de la fenêtre la propose avec ses notes de version : **Installer et redémarrer** télécharge l'installeur, l'installe et relance l'application, **Plus tard** la reproposera au prochain lancement. Sans réseau, l'application fonctionne normalement.
 
 Chaque installeur est signé par une clé **minisign** dont la clé publique est embarquée dans l'application : une mise à jour qui ne porte pas cette signature est refusée, même servie depuis ce dépôt.
 
